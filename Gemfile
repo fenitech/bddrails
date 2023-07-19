@@ -9,7 +9,7 @@ gem 'loofah', '2.9.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.7', '>= 5.0.7.2'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'sqlite3', '~> 1.3.13'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -38,16 +38,19 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
 
   #agrega gem rspec-rails
-  gem 'rspec-rails','3.1.0'
+  gem 'rspec-rails','3.6'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+ 
 end
 
 group :test do
+ 
   gem 'capybara', '~> 2.7.1'
 end
 
 group :development do
+
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.0.5'

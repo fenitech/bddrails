@@ -23,7 +23,16 @@ Things you may want to cover:
 
 * ...
 
-Pasos esperados en el test:
 
-1-funcion falla porque no hay datos
-2- 
+Casos de uso:
+
+-enttra a root page
+-click en crear nuevo articulo
+-fill in title
+-fill in body
+-create article
+
+expectiones:
+-Article has benn created.
+-article path
+
