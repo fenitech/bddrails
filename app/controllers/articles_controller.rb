@@ -11,9 +11,17 @@ class ArticlesController < ApplicationController
 
    @article = Article.new(article_params)
    
-      @article.save
+     if @article.save
       flash[:success] = "Article has benn created"
       redirect_to articles_path
+      
+    else
+        flash[:danger] = "Article has not benn created"
+        render :new
+      
+      end
+
+
   end
 
 
